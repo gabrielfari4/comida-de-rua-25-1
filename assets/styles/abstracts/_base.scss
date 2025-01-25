@@ -1,0 +1,18 @@
+@import './variaveis';
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include flexCenter;
+    flex-direction: column;
+    z-index: 0;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
