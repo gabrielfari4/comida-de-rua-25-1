@@ -8,4 +8,14 @@
     &--imagem {
         width: 64vw;
     }
+    &--textos {
+        @include flexCenter(space-between);
+        flex-direction: column;
+        padding-inline: 10vw;
+        .evento__texto {
+            font-family: $fonte-texto;
+            text-align: center;
+            font-size: 1.1em;
+        }
+    }
 }

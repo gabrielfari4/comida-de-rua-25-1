@@ -56,4 +56,16 @@ main {
 }
 .evento__container--imagem {
   width: 64vw;
+}
+.evento__container--textos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 10vw;
+}
+.evento__container--textos .evento__texto {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-align: center;
+  font-size: 1.1em;
 }/*# sourceMappingURL=style.css.map */
