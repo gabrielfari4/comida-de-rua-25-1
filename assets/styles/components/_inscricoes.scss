@@ -1,0 +1,41 @@
+@import '../abstracts/variaveis';
+
+.inscricoes__container {
+    @include flexCenter(space-evenly);
+    flex-direction: column;
+    height: 72vh;
+    width: 100%;
+    background-image: url(../images/CAPA-3.png);
+    background-size: 100% 100%;
+    font-size: 16px;
+    &--titulo {
+        font-family: $fonte-titulo;
+        font-size: 3em;
+    }
+    &--links {
+        @include flexCenter;
+        flex-direction: column;
+    }
+    &--link {
+        text-decoration: none;
+        font-family: $fonte-texto;
+        font-weight: bold;
+        color: $cor-fonte-primary;
+        background-color: $cor-link;
+        padding: 1em .5em;
+        border-radius: 12px;
+        width: 68vw;
+        max-width: 600px;
+        text-align: center;
+        font-size: 1.1em;
+    }
+    &--texto1 {
+        font-family: $fonte-texto;
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+    &--texto2 {
+        font-family: $fonte-texto;
+        font-size: 1em;
+    }
+}

@@ -28,6 +28,9 @@ main {
 .banner__container--imagem {
   width: 50vw;
 }
+.banner__container h1 {
+  display: none;
+}
 
 .hero__container {
   width: 100%;
@@ -79,4 +82,48 @@ main {
 }
 .data__container--imagem {
   width: 100%;
+}
+
+.inscricoes__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 72vh;
+  width: 100%;
+  background-image: url(../images/CAPA-3.png);
+  background-size: 100% 100%;
+  font-size: 16px;
+}
+.inscricoes__container--titulo {
+  font-family: "Barrio", sans-serif;
+  font-size: 3em;
+}
+.inscricoes__container--links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inscricoes__container--link {
+  text-decoration: none;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #D34042;
+  padding: 1em 0.5em;
+  border-radius: 12px;
+  width: 68vw;
+  max-width: 600px;
+  text-align: center;
+  font-size: 1.1em;
+}
+.inscricoes__container--texto1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+.inscricoes__container--texto2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1em;
 }/*# sourceMappingURL=style.css.map */
