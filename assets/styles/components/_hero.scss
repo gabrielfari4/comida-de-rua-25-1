@@ -1,0 +1,17 @@
+
+.hero__container {
+    width: 100%;
+    height: 64vh;
+    .carousel, .slide {
+        height: 64vh;
+        .carousel-inner {
+            height: 64vh;
+            .carousel-item {
+                height: 64vh;
+                img {
+                    height: 64vh;
+                }
+            }
+        }
+    }
+}

@@ -15,4 +15,45 @@ body {
 
 main {
   width: 100%;
+}
+
+.banner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19261F;
+  height: 16vh;
+  width: 100%;
+}
+.banner__container--imagem {
+  width: 50vw;
+}
+
+.hero__container {
+  width: 100%;
+  height: 64vh;
+}
+.hero__container .carousel, .hero__container .slide {
+  height: 64vh;
+}
+.hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
+  height: 64vh;
+}
+.hero__container .carousel .carousel-inner .carousel-item, .hero__container .slide .carousel-inner .carousel-item {
+  height: 64vh;
+}
+.hero__container .carousel .carousel-inner .carousel-item img, .hero__container .slide .carousel-inner .carousel-item img {
+  height: 64vh;
+}
+
+.evento__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  width: 100%;
+}
+.evento__container--imagem {
+  width: 64vw;
 }/*# sourceMappingURL=style.css.map */

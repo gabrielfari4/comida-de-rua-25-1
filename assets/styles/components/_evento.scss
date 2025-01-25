@@ -1,0 +1,11 @@
+@import '../abstracts/variaveis';
+
+.evento__container {
+    @include flexCenter(space-between);
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+    &--imagem {
+        width: 64vw;
+    }
+}

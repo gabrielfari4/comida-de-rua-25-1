@@ -1,0 +1,12 @@
+@import '../abstracts/variaveis';
+
+.banner__container {
+    @include flexCenter;
+    background-color: $cor-header;
+    height: 16vh;
+    width: 100%;
+    &--imagem {
+        width: 50vw;
+    }
+}
+
