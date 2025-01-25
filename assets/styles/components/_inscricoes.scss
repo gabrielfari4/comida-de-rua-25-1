@@ -5,12 +5,13 @@
     flex-direction: column;
     height: 72vh;
     width: 100%;
-    background-image: url(../images/CAPA-3.png);
+    background-image: url(../images/bg-laranja.png);
     background-size: 100% 100%;
     font-size: 16px;
     &--titulo {
         font-family: $fonte-titulo;
         font-size: 3em;
+        color: $cor-fonte-preta;
     }
     &--links {
         @include flexCenter;
@@ -31,11 +32,13 @@
     }
     &--texto1 {
         font-family: $fonte-texto;
+        color: $cor-fonte-preta;
         font-size: 1.2em;
         margin-bottom: 0;
     }
     &--texto2 {
         font-family: $fonte-texto;
+        color: $cor-fonte-preta;
         font-size: 1em;
     }
 }

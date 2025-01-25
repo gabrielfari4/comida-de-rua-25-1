@@ -1,0 +1,55 @@
+@import '../abstracts/variaveis';
+
+.programacao__container {
+    @include flexCenter(center);
+    flex-direction: column;
+    height: 72vh;
+    width: 100%;
+    background-image: url(../images/bg-branco.png);
+    background-size: 100% 100%;
+    font-size: 16px;
+}
+
+.programacao__titulo {
+    font-family: $fonte-titulo;
+    color: $cor-programacao;
+    font-size: 3em;
+    // margin-top: 5vh
+}
+
+.programacao {
+    @include flexCenter(space-between);
+    align-items: flex-start;
+    width: 95vw;
+    &__dia {
+        @include flexCenter(start);
+        flex-direction: column;
+        height: 40vh;
+        row-gap: 3vh;
+        font-family: $fonte-titulo;
+        color: $cor-fonte-preta;
+        margin-top: 5vh;
+    }
+    &__data {
+        font-size: 1.8em;
+    }
+    &__lista {
+        @include flexCenter;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 2vh;
+        &--atracao {
+            color: $cor-fonte-preta;
+            span {
+                color: $cor-programacao;
+            }
+        }
+    }
+    hr {
+        border: 1px solid $cor-fonte-preta;
+        opacity: 1;
+        transform: rotate(0.5turn);
+        height: 50vh;
+    }
+}
+

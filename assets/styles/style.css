@@ -91,13 +91,14 @@ main {
   flex-direction: column;
   height: 72vh;
   width: 100%;
-  background-image: url(../images/CAPA-3.png);
+  background-image: url(../images/bg-laranja.png);
   background-size: 100% 100%;
   font-size: 16px;
 }
 .inscricoes__container--titulo {
   font-family: "Barrio", sans-serif;
   font-size: 3em;
+  color: #121212;
 }
 .inscricoes__container--links {
   display: flex;
@@ -120,11 +121,13 @@ main {
 }
 .inscricoes__container--texto1 {
   font-family: "Barlow Semi Condensed", sans-serif;
+  color: #121212;
   font-size: 1.2em;
   margin-bottom: 0;
 }
 .inscricoes__container--texto2 {
   font-family: "Barlow Semi Condensed", sans-serif;
+  color: #121212;
   font-size: 1em;
 }
 
@@ -135,4 +138,64 @@ main {
 }
 .entrada__container--imagem {
   width: 100%;
+}
+
+.programacao__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 72vh;
+  width: 100%;
+  background-image: url(../images/bg-branco.png);
+  background-size: 100% 100%;
+  font-size: 16px;
+}
+
+.programacao__titulo {
+  font-family: "Barrio", sans-serif;
+  color: #DA493B;
+  font-size: 3em;
+}
+
+.programacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  width: 95vw;
+}
+.programacao__dia {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh;
+  row-gap: 3vh;
+  font-family: "Barrio", sans-serif;
+  color: #121212;
+  margin-top: 5vh;
+}
+.programacao__data {
+  font-size: 1.8em;
+}
+.programacao__lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2vh;
+}
+.programacao__lista--atracao {
+  color: #121212;
+}
+.programacao__lista--atracao span {
+  color: #DA493B;
+}
+.programacao hr {
+  border: 1px solid #121212;
+  opacity: 1;
+  transform: rotate(0.5turn);
+  height: 50vh;
 }/*# sourceMappingURL=style.css.map */
