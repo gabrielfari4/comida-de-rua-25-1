@@ -126,4 +126,13 @@ main {
 .inscricoes__container--texto2 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 1em;
+}
+
+.entrada__container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.entrada__container--imagem {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
