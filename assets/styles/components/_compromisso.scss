@@ -3,7 +3,7 @@
 .compromisso__container {
     @include flexCenter(space-evenly);
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     height: 40vh;
     width: 100%;
     background-image: url(../images/bg-vermelho.png);

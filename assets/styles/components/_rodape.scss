@@ -1,0 +1,44 @@
+@import '../abstracts/variaveis';
+
+.rodape {
+    @include flexCenter;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 5vh;
+    width: 100%;
+    background-image: url(../images/bg-laranja.png);
+    background-size: 100% 100%;
+    padding-right: 5vw;
+    font-size: 16px;
+    div {
+        @include flexCenter;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 45vw;
+    }
+    &__texto {
+        @include flexCenter(flex-start);
+        font-size: .5em;
+        color: $cor-fonte-preta;
+        margin-bottom: 0;
+        column-gap: 1vw;
+        font-family: $fonte-texto;
+    }
+    &__link {
+        @include flexCenter;
+        column-gap: 1vw;
+        text-decoration: none;
+        color: $cor-fonte-preta;
+        vertical-align: bottom;
+    }
+    &__icone {
+        width: 4vw;
+        vertical-align: bottom;
+        align-self: auto;
+    }
+    &__nome {
+        font-size: 1em;
+        vertical-align: bottom;
+        font-weight: 700;
+    }
+}

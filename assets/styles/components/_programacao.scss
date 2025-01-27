@@ -14,7 +14,6 @@
     font-family: $fonte-titulo;
     color: $cor-programacao;
     font-size: 3em;
-    // margin-top: 5vh
 }
 
 .programacao {
@@ -22,7 +21,7 @@
     align-items: flex-start;
     width: 95vw;
     &__dia {
-        @include flexCenter(start);
+        @include flexCenter(flex-start);
         flex-direction: column;
         height: 40vh;
         row-gap: 3vh;
