@@ -292,7 +292,7 @@ main {
   font-size: 0.95em;
   width: 80vw;
   font-weight: 600;
-  margin-block: 1.5vh;
+  margin-block: 1.8vh;
 }
 .direito__textos--protocolo {
   line-height: 1;
@@ -308,4 +308,14 @@ main {
 }
 .direito__textos--denuncie {
   font-weight: 800;
+}
+
+.apoio__container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.apoio__imagem {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
