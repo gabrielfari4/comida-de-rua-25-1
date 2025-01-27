@@ -247,6 +247,14 @@ main {
   height: 50vh;
 }
 
+@media screen and (orientation: landscape) {
+  .programacao__container {
+    height: 120vh;
+  }
+  .programacao__lista {
+    margin-left: 5vw;
+  }
+}
 .compromisso__container {
   display: flex;
   justify-content: space-evenly;
@@ -295,6 +303,11 @@ main {
   font-weight: 200;
 }
 
+@media screen and (orientation: landscape) {
+  .compromisso__container {
+    height: 80vh;
+  }
+}
 .direito__container {
   display: flex;
   justify-content: space-evenly;
@@ -357,6 +370,14 @@ main {
   font-weight: 800;
 }
 
+@media screen and (orientation: landscape) {
+  .direito__container {
+    height: 90vh;
+  }
+  .direito__top--imagem {
+    width: 20vw;
+  }
+}
 .apoio__container {
   width: 100%;
   height: -moz-fit-content;
@@ -418,4 +439,19 @@ main {
   font-size: 1em;
   vertical-align: bottom;
   font-weight: 700;
+}
+
+@media screen and (orientation: landscape) {
+  .rodape {
+    height: 20vh;
+  }
+  .rodape__texto {
+    font-size: 0.8em;
+  }
+  .rodape__icone {
+    width: 2.8vw;
+  }
+  .rodape__nome {
+    font-size: 0.9em;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -45,3 +45,9 @@
     line-height: 1;
     font-weight: 200;
 }
+
+@media screen and (orientation: landscape) {
+    .compromisso__container {
+        height: 80vh;
+    }
+}

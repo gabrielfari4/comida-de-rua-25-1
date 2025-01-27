@@ -56,3 +56,14 @@
         font-weight: 800;
     }
 }
+
+@media screen and (orientation: landscape) {
+    .direito__container {
+        height: 90vh;
+    }
+    .direito__top {
+        &--imagem {
+            width: 20vw;
+        }
+    }
+}

@@ -42,3 +42,18 @@
         font-weight: 700;
     }
 }
+
+@media screen and (orientation: landscape) {
+    .rodape {
+        height: 20vh;
+        &__texto {
+            font-size: .8em;
+        }
+        &__icone {
+            width: 2.8vw;
+        }
+        &__nome {
+            font-size: .9em;
+        }
+    }
+}
