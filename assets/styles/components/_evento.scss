@@ -5,18 +5,20 @@
     flex-direction: column;
     height: fit-content;
     width: 100%;
-    &--imagem {
-        width: 64vw;
-    }
-    &--textos {
-        @include flexCenter;
-        flex-direction: column;
-        padding-inline: 10vw;
-        height: 80%;
-        .evento__texto {
-            font-family: $fonte-texto;
-            text-align: center;
-            font-size: 1.1em;
-        }
+}
+
+.evento__imagem {
+    width: 64vw;
+}
+
+.evento__descricao {
+    @include flexCenter;
+    flex-direction: column;
+    padding-inline: 10vw;
+    height: 80%;
+    &--texto {
+        font-family: $fonte-texto;
+        text-align: center;
+        font-size: 1.1em;
     }
 }

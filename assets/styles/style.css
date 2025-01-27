@@ -25,11 +25,12 @@ main {
   height: 16vh;
   width: 100%;
 }
-.banner__container--imagem {
-  width: 50vw;
-}
 .banner__container h1 {
   display: none;
+}
+
+.banner__imagem {
+  width: 50vw;
 }
 
 .hero__container {
@@ -58,10 +59,12 @@ main {
   height: fit-content;
   width: 100%;
 }
-.evento__container--imagem {
+
+.evento__imagem {
   width: 64vw;
 }
-.evento__container--textos {
+
+.evento__descricao {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +72,7 @@ main {
   padding-inline: 10vw;
   height: 80%;
 }
-.evento__container--textos .evento__texto {
+.evento__descricao--texto {
   font-family: "Barlow Semi Condensed", sans-serif;
   text-align: center;
   font-size: 1.1em;
@@ -80,7 +83,8 @@ main {
   height: -moz-fit-content;
   height: fit-content;
 }
-.data__container--imagem {
+
+.data__imagem {
   width: 100%;
 }
 
@@ -95,18 +99,20 @@ main {
   background-size: 100% 100%;
   font-size: 16px;
 }
-.inscricoes__container--titulo {
+
+.inscricoes__titulo {
   font-family: "Barrio", sans-serif;
   font-size: 3em;
   color: #121212;
 }
-.inscricoes__container--links {
+
+.inscricoes__links {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.inscricoes__container--link {
+.inscricoes__links--link {
   text-decoration: none;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: bold;
@@ -119,13 +125,13 @@ main {
   text-align: center;
   font-size: 1.1em;
 }
-.inscricoes__container--texto1 {
+.inscricoes__links--texto1 {
   font-family: "Barlow Semi Condensed", sans-serif;
   color: #121212;
   font-size: 1.2em;
   margin-bottom: 0;
 }
-.inscricoes__container--texto2 {
+.inscricoes__links--texto2 {
   font-family: "Barlow Semi Condensed", sans-serif;
   color: #121212;
   font-size: 1em;
@@ -136,7 +142,8 @@ main {
   height: -moz-fit-content;
   height: fit-content;
 }
-.entrada__container--imagem {
+
+.entrada__imagem {
   width: 100%;
 }
 

@@ -8,15 +8,17 @@
     background-image: url(../images/bg-laranja.png);
     background-size: 100% 100%;
     font-size: 16px;
-    &--titulo {
-        font-family: $fonte-titulo;
-        font-size: 3em;
-        color: $cor-fonte-preta;
-    }
-    &--links {
-        @include flexCenter;
-        flex-direction: column;
-    }
+}
+
+.inscricoes__titulo {
+    font-family: $fonte-titulo;
+    font-size: 3em;
+    color: $cor-fonte-preta;
+}
+
+.inscricoes__links {
+    @include flexCenter;
+    flex-direction: column;
     &--link {
         text-decoration: none;
         font-family: $fonte-texto;

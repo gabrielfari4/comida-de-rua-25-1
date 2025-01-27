@@ -5,11 +5,11 @@
     background-color: $cor-header;
     height: 16vh;
     width: 100%;
-    &--imagem {
-        width: 50vw;
-    }
     h1 {
         display: none;
     }
 }
 
+.banner__imagem {
+    width: 50vw;
+}
