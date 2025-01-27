@@ -58,6 +58,25 @@ main {
   height: 64vh;
 }
 
+@media screen and (orientation: landscape) {
+  .hero__container {
+    height: 100vh;
+    width: 50vw;
+    margin-inline: auto;
+  }
+  .hero__container .carousel, .hero__container .slide {
+    height: 100vh;
+  }
+  .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
+    height: 100vh;
+  }
+  .hero__container .carousel .carousel-inner .carousel-item, .hero__container .slide .carousel-inner .carousel-item {
+    height: 100vh;
+  }
+  .hero__container .carousel .carousel-inner .carousel-item img, .hero__container .slide .carousel-inner .carousel-item img {
+    height: 100vh;
+  }
+}
 .evento__container {
   display: flex;
   justify-content: center;
@@ -86,6 +105,11 @@ main {
   font-size: 1.1em;
 }
 
+@media screen and (orientation: landscape) {
+  .evento__descricao--texto {
+    font-size: 1.4em;
+  }
+}
 .data__container {
   width: 100%;
   height: -moz-fit-content;
@@ -145,6 +169,14 @@ main {
   font-size: 1em;
 }
 
+@media screen and (orientation: landscape) {
+  .inscricoes__container {
+    height: 130vh;
+  }
+  .inscricoes__titulo {
+    margin-top: 5vh;
+  }
+}
 .entrada__container {
   width: 100%;
   height: -moz-fit-content;

@@ -22,3 +22,11 @@
         font-size: 1.1em;
     }
 }
+
+@media screen and (orientation: landscape) {
+    .evento__descricao {
+        &--texto {
+            font-size: 1.4em;
+        }
+    }
+}

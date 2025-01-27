@@ -44,3 +44,12 @@
         font-size: 1em;
     }
 }
+
+@media screen and (orientation: landscape) {
+    .inscricoes__container {
+        height: 130vh;
+    }
+    .inscricoes__titulo {
+        margin-top: 5vh;
+    }
+}
