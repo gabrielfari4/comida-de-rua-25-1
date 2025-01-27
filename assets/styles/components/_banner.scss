@@ -22,3 +22,30 @@
         width: 24vw;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .banner__container {
+        height: 16vh;
+    }
+    .banner__imagem {
+        width: 32vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .banner__container {
+        height: 24vh;
+    }
+    .banner__imagem {
+        width: 28vw;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .banner__container {
+        height: 16vh;
+    }
+    .banner__imagem {
+        width: 12vw;
+    }
+}
