@@ -198,4 +198,51 @@ main {
   opacity: 1;
   transform: rotate(0.5turn);
   height: 50vh;
+}
+
+.compromisso__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  height: 40vh;
+  width: 100%;
+  background-image: url(../images/bg-vermelho.png);
+  background-size: 100% 100%;
+  font-size: 16px;
+  padding: 2vh 5vw;
+}
+
+.compromisso__titulo {
+  color: #F3A81B;
+  font-size: 2em;
+  font-family: "Barrio", sans-serif;
+  width: 50vw;
+}
+.compromisso__titulo span {
+  color: #FFFFFF;
+}
+
+.compromisso__subtitulo {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.95em;
+  width: 75vw;
+  margin-bottom: 0;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.compromisso__subtitulo:last-of-type {
+  color: #F3A81B;
+  margin-bottom: 2vh;
+}
+
+.compromisso__lista {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #FFFFFF;
+  padding-left: 0;
+  margin-left: 4vw;
+  line-height: 1;
+  font-weight: 200;
 }/*# sourceMappingURL=style.css.map */

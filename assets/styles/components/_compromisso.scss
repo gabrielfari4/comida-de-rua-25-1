@@ -1,0 +1,46 @@
+@import '../abstracts/variaveis';
+
+.compromisso__container {
+    @include flexCenter(space-evenly);
+    flex-direction: column;
+    align-items: start;
+    height: 40vh;
+    width: 100%;
+    background-image: url(../images/bg-vermelho.png);
+    background-size: 100% 100%;
+    font-size: 16px;
+    padding: 2vh 5vw;
+}
+
+.compromisso__titulo {
+    color: $cor-fonte-laranja;
+    font-size: 2em;
+    font-family: $fonte-titulo;
+    width: 50vw;
+    span {
+        color: $cor-fonte-primary;
+    }
+}
+
+.compromisso__subtitulo {
+    font-family: $fonte-texto;
+    font-size: .95em;
+    width: 75vw;
+    margin-bottom: 0;
+    color: $cor-fonte-primary;
+    font-weight: 600;
+}
+
+.compromisso__subtitulo:last-of-type {
+    color: $cor-fonte-laranja;
+    margin-bottom: 2vh;
+}
+
+.compromisso__lista {
+    font-family: $fonte-texto;
+    color: $cor-fonte-primary;
+    padding-left: 0;
+    margin-left: 4vw;
+    line-height: 1;
+    font-weight: 200;
+}
