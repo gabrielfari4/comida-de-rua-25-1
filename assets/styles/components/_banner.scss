@@ -13,3 +13,12 @@
 .banner__imagem {
     width: 50vw;
 }
+
+@media screen and (orientation: landscape) {
+    .banner__container {
+        height: 32vh;
+    }
+    .banner__imagem {
+        width: 24vw;
+    }
+}
