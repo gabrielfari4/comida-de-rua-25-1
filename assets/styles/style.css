@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,15 +54,23 @@ main {
     height: 24vh;
   }
   .banner__imagem {
-    width: 28vw;
+    width: 20vw;
   }
 }
-@media screen and (min-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) {
   .banner__container {
     height: 16vh;
   }
   .banner__imagem {
-    width: 12vw;
+    width: 24vw;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .banner__container {
+    height: 24vh;
+  }
+  .banner__imagem {
+    width: 20vw;
   }
 }
 .hero__container {
@@ -85,11 +93,77 @@ main {
 @media screen and (orientation: landscape) {
   .hero__container {
     height: 100vh;
-    width: 50vw;
-    margin-inline: auto;
+    width: 100%;
+    background-image: url(../images/wall.png);
+    background-size: contain;
   }
   .hero__container .carousel, .hero__container .slide {
     height: 100vh;
+    width: 50vw;
+    margin-inline: auto;
+  }
+  .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
+    height: 100vh;
+  }
+  .hero__container .carousel .carousel-inner .carousel-item, .hero__container .slide .carousel-inner .carousel-item {
+    height: 100vh;
+  }
+  .hero__container .carousel .carousel-inner .carousel-item img, .hero__container .slide .carousel-inner .carousel-item img {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    height: 110vh;
+    width: 100%;
+    background-image: url(../images/wall.png);
+    background-size: contain;
+  }
+  .hero__container .carousel, .hero__container .slide {
+    width: 80vw;
+    height: 100vh;
+    margin: 5vh auto;
+  }
+  .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
+    height: 100vh;
+  }
+  .hero__container .carousel .carousel-inner .carousel-item, .hero__container .slide .carousel-inner .carousel-item {
+    height: 100vh;
+  }
+  .hero__container .carousel .carousel-inner .carousel-item img, .hero__container .slide .carousel-inner .carousel-item img {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .hero__container {
+    height: 120vh;
+    width: 100%;
+  }
+  .hero__container .carousel, .hero__container .slide {
+    width: 70vw;
+    margin: 10vh auto;
+    height: 110vh;
+  }
+  .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
+    height: 100vh;
+  }
+  .hero__container .carousel .carousel-inner .carousel-item, .hero__container .slide .carousel-inner .carousel-item {
+    height: 100vh;
+  }
+  .hero__container .carousel .carousel-inner .carousel-item img, .hero__container .slide .carousel-inner .carousel-item img {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .hero__container {
+    height: 120vh;
+    width: 100%;
+    background-size: contain;
+  }
+  .hero__container .carousel, .hero__container .slide {
+    width: 45vw;
+    margin: 10vh auto;
+    height: 110vh;
   }
   .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
     height: 100vh;
@@ -132,6 +206,21 @@ main {
 @media screen and (orientation: landscape) {
   .evento__descricao--texto {
     font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .evento__descricao--texto {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .evento__descricao--texto {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .evento__descricao {
+    margin-bottom: 5vh;
   }
 }
 .data__container {
@@ -195,10 +284,45 @@ main {
 
 @media screen and (orientation: landscape) {
   .inscricoes__container {
-    height: 130vh;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-block: 5vh;
   }
   .inscricoes__titulo {
     margin-top: 5vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .inscricoes__titulo {
+    font-size: 5em;
+  }
+  .inscricoes__links--link {
+    font-size: 1.5em;
+    padding: 0.9em 0.5em;
+  }
+  .inscricoes__links--texto1 {
+    font-size: 1.7em;
+  }
+  .inscricoes__links--texto2 {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .inscricoes__container {
+    height: -moz-fit-content;
+    height: fit-content;
+    row-gap: 5vh;
+  }
+  .inscricoes__links--link {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .inscricoes__container {
+    padding-block: 5vh;
+  }
+  .inscricoes__titulo {
+    font-size: 5em;
   }
 }
 .entrada__container {
@@ -213,14 +337,16 @@ main {
 
 .programacao__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 72vh;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   background-image: url(../images/bg-branco.png);
   background-size: 100% 100%;
   font-size: 16px;
+  padding-block: 5vh;
 }
 
 .programacao__titulo {
@@ -241,7 +367,8 @@ main {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height: 40vh;
+  height: -moz-fit-content;
+  height: fit-content;
   row-gap: 3vh;
   font-family: "Barrio", sans-serif;
   color: #121212;
@@ -268,18 +395,59 @@ main {
   border: 1px solid #121212;
   opacity: 1;
   transform: rotate(0.5turn);
-  height: 50vh;
+  height: 60vh;
 }
 
 @media screen and (orientation: landscape) {
   .programacao__container {
-    height: 120vh;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .programacao__lista {
     margin-left: 5vw;
   }
   .programacao hr {
-    height: 60vh;
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .programacao__titulo {
+    font-size: 4em;
+  }
+  .programacao__data {
+    font-size: 2em;
+  }
+  .programacao__lista {
+    margin-left: 5vw;
+  }
+  .programacao__lista--atracao {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .programacao__container {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .programacao hr {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .programacao__lista {
+    row-gap: 5vh;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .programacao__container {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .programacao__lista {
+    font-size: 1.3em;
+  }
+  .programacao hr {
+    height: 80vh;
   }
 }
 .compromisso__container {
@@ -288,7 +456,8 @@ main {
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  height: 40vh;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   background-image: url(../images/bg-vermelho.png);
   background-size: 100% 100%;
@@ -300,7 +469,7 @@ main {
   color: #F3A81B;
   font-size: 2em;
   font-family: "Barrio", sans-serif;
-  width: 50vw;
+  width: 70vw;
 }
 .compromisso__titulo span {
   color: #FFFFFF;
@@ -309,16 +478,16 @@ main {
 .compromisso__subtitulo {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 0.95em;
-  width: 75vw;
+  width: 70vw;
   margin-bottom: 0;
   color: #FFFFFF;
   font-weight: 600;
-  line-height: 0.5;
+  margin-top: 1.7vh;
 }
 
 .compromisso__subtitulo:last-of-type {
   color: #F3A81B;
-  margin-bottom: 2vh;
+  margin-block: 0 3vh;
 }
 
 .compromisso__lista {
@@ -332,7 +501,61 @@ main {
 
 @media screen and (orientation: landscape) {
   .compromisso__container {
-    height: 80vh;
+    padding-block: 5vh;
+  }
+  .compromisso__titulo {
+    font-size: 2.5em;
+  }
+  .compromisso__subtitulo {
+    font-size: 1.3em;
+  }
+  .compromisso__lista {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .compromisso__container {
+    background-size: cover;
+  }
+  .compromisso__titulo {
+    font-size: 3em;
+  }
+  .compromisso__subtitulo {
+    font-size: 1.5em;
+  }
+  .compromisso__lista {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .compromisso__titulo {
+    font-size: 4em;
+  }
+  .compromisso__subtitulo {
+    font-size: 1.8em;
+  }
+  .compromisso__lista {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .compromisso__titulo {
+    font-size: 4.5em;
+  }
+  .compromisso__subtitulo {
+    font-size: 2em;
+  }
+  .compromisso__lista {
+    font-size: 2em;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .compromisso__container {
+    padding-left: 10vw;
+  }
+  .compromisso__lista {
+    margin-left: 1.5vw;
   }
 }
 .direito__container {
@@ -341,7 +564,8 @@ main {
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  height: 40vh;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   background-image: url(../images/bg-verde.png);
   background-size: 100% 100%;
@@ -403,6 +627,76 @@ main {
   }
   .direito__top--imagem {
     width: 20vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .direito__container {
+    row-gap: 1vh;
+  }
+  .direito__top--titulo {
+    font-size: 3em;
+  }
+  .direito__textos--titulo {
+    font-size: 1.5em;
+  }
+  .direito__textos--protocolo {
+    font-size: 1.4em;
+  }
+  .direito__textos--acolhimento {
+    font-size: 1.4em;
+  }
+  .direito__textos--denuncie {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .direito__container {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-block: 5vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .direito__top {
+    padding-block: 2vh;
+  }
+  .direito__top--imagem {
+    width: 35vw;
+  }
+  .direito__top--titulo {
+    font-size: 3.5em;
+  }
+  .direito__textos--titulo {
+    font-size: 1.8em;
+  }
+  .direito__textos--protocolo {
+    font-size: 1.7em;
+  }
+  .direito__textos--acolhimento {
+    font-size: 1.7em;
+  }
+  .direito__textos--denuncie {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .direito__top--imagem {
+    width: 30vw;
+  }
+  .direito__top--titulo {
+    font-size: 4.5em;
+  }
+  .direito__textos--titulo {
+    font-size: 2.4em;
+  }
+  .direito__textos--protocolo {
+    font-size: 2.3em;
+  }
+  .direito__textos--acolhimento {
+    font-size: 2.3em;
+  }
+  .direito__textos--denuncie {
+    font-size: 2.2em;
   }
 }
 .apoio__container {
@@ -480,5 +774,30 @@ main {
   }
   .rodape__nome {
     font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rodape {
+    height: 6vh;
+  }
+  .rodape__texto {
+    font-size: 0.8em;
+  }
+  .rodape__icone {
+    width: 3vw;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .rodape {
+    height: 15vh;
+  }
+  .rodape__icone {
+    width: 2.5vw;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .rodape {
+    width: 100%;
+    height: 8vh;
   }
 }/*# sourceMappingURL=style.css.map */

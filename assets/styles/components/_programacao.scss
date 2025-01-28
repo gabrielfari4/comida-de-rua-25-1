@@ -1,13 +1,14 @@
 @import '../abstracts/variaveis';
 
 .programacao__container {
-    @include flexCenter(center);
+    @include flexCenter(space-evenly);
     flex-direction: column;
-    height: 72vh;
+    height: fit-content;
     width: 100%;
     background-image: url(../images/bg-branco.png);
     background-size: 100% 100%;
     font-size: 16px;
+    padding-block: 5vh;
 }
 
 .programacao__titulo {
@@ -23,7 +24,7 @@
     &__dia {
         @include flexCenter(flex-start);
         flex-direction: column;
-        height: 40vh;
+        height: fit-content;
         row-gap: 3vh;
         font-family: $fonte-titulo;
         color: $cor-fonte-preta;
@@ -48,32 +49,70 @@
         border: 1px solid $cor-fonte-preta;
         opacity: 1;
         transform: rotate(0.5turn);
-        height: 50vh;
+        height: 60vh;
     }
 }
 
 @media screen and (orientation: landscape) {
     .programacao__container {
-        height: 120vh;
+        height: fit-content;
     }
     .programacao {
         &__lista {
             margin-left: 5vw;
         }
         hr {
-            height: 60vh;
+            height: 80vh;
         }
-        }
+    }
 }
 
 @media screen and (min-width: 768px) {
-
+    .programacao__titulo {
+        font-size: 4em;
+    }
+    .programacao {
+        &__data {
+            font-size: 2em;
+        }
+        &__lista {
+            margin-left: 5vw;
+            &--atracao {
+                font-size: 1.6em;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
+    .programacao__container {
+        height: fit-content;
+    }
+    .programacao {
+        hr {
+            height: 80vh;
+        }
+    }
+}
 
+@media screen and (min-width: 1024px) {
+    .programacao {
+        &__lista {
+            row-gap: 5vh;
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-    
+    .programacao__container {
+        height: fit-content;
+    }
+    .programacao {
+        &__lista {
+            font-size: 1.3em;
+        }
+        hr {
+            height: 80vh;
+        }
+    }
 }
