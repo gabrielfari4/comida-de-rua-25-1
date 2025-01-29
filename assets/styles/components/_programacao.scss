@@ -49,12 +49,13 @@
         border: 1px solid $cor-fonte-preta;
         opacity: 1;
         transform: rotate(0.5turn);
-        height: 60vh;
+        height: 70vh;
     }
 }
 
 @media screen and (orientation: landscape) {
     .programacao__container {
+        background-image: url(../images/bg-branco-desktop.png);
         height: fit-content;
     }
     .programacao {
@@ -62,7 +63,7 @@
             margin-left: 5vw;
         }
         hr {
-            height: 80vh;
+            height: 70vh;
         }
     }
 }
@@ -90,7 +91,7 @@
     }
     .programacao {
         hr {
-            height: 80vh;
+            height: 90vh;
         }
     }
 }

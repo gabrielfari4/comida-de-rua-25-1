@@ -28,7 +28,7 @@
         padding: 1em .5em;
         border-radius: 12px;
         width: 68vw;
-        max-width: 600px;
+        max-width: 500px;
         text-align: center;
         font-size: 1.1em;
     }
@@ -47,6 +47,7 @@
 
 @media screen and (orientation: landscape) {
     .inscricoes__container {
+        background-image: url(../images/bg-laranja-desktop.png);
         height: fit-content;
         padding-block: 5vh;
     }

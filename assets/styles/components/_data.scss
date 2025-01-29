@@ -7,3 +7,17 @@
 .data__imagem {
     width: 100%;
 }
+
+.data__imagem--desktop {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    .data__imagem {
+        display: none;
+    }
+    .data__imagem--desktop {
+        display: block;
+        width: 100%;
+    }
+}
