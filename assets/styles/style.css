@@ -116,7 +116,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .hero__container {
-    height: 110vh;
+    height: 100vh;
     width: 100%;
   }
   .hero__container .carousel, .hero__container .slide {
@@ -138,16 +138,16 @@ main {
     width: 100%;
   }
   .hero__container .carousel, .hero__container .slide {
-    height: 110vh;
+    height: 120vh;
   }
   .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
-    height: 100vh;
+    height: 120vh;
   }
   .hero__container .carousel .carousel-inner .carousel-item, .hero__container .slide .carousel-inner .carousel-item {
-    height: 100vh;
+    height: 120vh;
   }
   .hero__container .carousel .carousel-inner .carousel-item img, .hero__container .slide .carousel-inner .carousel-item img {
-    height: 100vh;
+    height: 120vh;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -156,16 +156,16 @@ main {
     width: 100%;
   }
   .hero__container .carousel, .hero__container .slide {
-    height: 110vh;
+    height: 120vh;
   }
   .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
-    height: 100vh;
+    height: 120vh;
   }
   .hero__container .carousel .carousel-inner .carousel-item, .hero__container .slide .carousel-inner .carousel-item {
-    height: 100vh;
+    height: 120vh;
   }
   .hero__container .carousel .carousel-inner .carousel-item img, .hero__container .slide .carousel-inner .carousel-item img {
-    height: 100vh;
+    height: 120vh;
   }
 }
 .evento__container {
@@ -199,6 +199,9 @@ main {
 @media screen and (orientation: landscape) {
   .evento__descricao--texto {
     font-size: 1.4em;
+  }
+  .evento__imagem {
+    width: 50vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -404,18 +407,26 @@ main {
   flex-direction: column;
   align-items: flex-start;
   row-gap: 2vh;
+  padding-left: 2vw;
 }
 .programacao__lista--atracao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
   color: #121212;
+  font-size: 0.8em;
 }
-.programacao__lista--atracao span {
+.programacao__lista--atracao span:first-of-type {
   color: #DA493B;
 }
 .programacao hr {
   border: 1px solid #121212;
   opacity: 1;
   transform: rotate(0.5turn);
-  height: 70vh;
+  height: 50vh;
 }
 
 @media screen and (orientation: landscape) {
@@ -423,6 +434,9 @@ main {
     background-image: url(../images/bg-branco-desktop.png);
     height: -moz-fit-content;
     height: fit-content;
+  }
+  .programacao__data {
+    font-size: 2em;
   }
   .programacao__lista {
     margin-left: 5vw;
@@ -436,7 +450,7 @@ main {
     font-size: 4em;
   }
   .programacao__data {
-    font-size: 2em;
+    font-size: 2.2em;
   }
   .programacao__lista {
     margin-left: 5vw;
@@ -444,19 +458,35 @@ main {
   .programacao__lista--atracao {
     font-size: 1.6em;
   }
+  .programacao hr {
+    height: 60vh;
+  }
 }
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .programacao__container {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .programacao__data {
+    font-size: 2.4em;
+  }
   .programacao hr {
-    height: 90vh;
+    height: 110vh;
   }
 }
 @media screen and (min-width: 1024px) {
+  .programacao__data {
+    font-size: 2.5em;
+  }
   .programacao__lista {
     row-gap: 5vh;
+    margin-left: 1vw;
+  }
+  .programacao__lista--atracao {
+    font-size: 1.9em;
+  }
+  .programacao hr {
+    height: 70vh;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -468,7 +498,7 @@ main {
     font-size: 1.3em;
   }
   .programacao hr {
-    height: 80vh;
+    height: 110vh;
   }
 }
 .compromisso__container {
