@@ -91,16 +91,18 @@ main {
 }
 
 @media screen and (orientation: landscape) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
   .hero__container {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/wall.png);
-    background-size: contain;
   }
   .hero__container .carousel, .hero__container .slide {
     height: 100vh;
-    width: 50vw;
-    margin-inline: auto;
   }
   .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
     height: 100vh;
@@ -116,13 +118,9 @@ main {
   .hero__container {
     height: 110vh;
     width: 100%;
-    background-image: url(../images/wall.png);
-    background-size: contain;
   }
   .hero__container .carousel, .hero__container .slide {
-    width: 80vw;
     height: 100vh;
-    margin: 5vh auto;
   }
   .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
     height: 100vh;
@@ -140,8 +138,6 @@ main {
     width: 100%;
   }
   .hero__container .carousel, .hero__container .slide {
-    width: 70vw;
-    margin: 10vh auto;
     height: 110vh;
   }
   .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
@@ -158,11 +154,8 @@ main {
   .hero__container {
     height: 120vh;
     width: 100%;
-    background-size: contain;
   }
   .hero__container .carousel, .hero__container .slide {
-    width: 45vw;
-    margin: 10vh auto;
     height: 110vh;
   }
   .hero__container .carousel .carousel-inner, .hero__container .slide .carousel-inner {
